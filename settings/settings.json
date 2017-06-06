@@ -1,0 +1,15 @@
+{
+  "public": {
+
+  },
+  "private": {
+    "netstorage": {
+      "hostname": "aarlaud-im-nsu.akamaihd.net",
+      "keyName": "antoinearlaud",
+      "key": "xnZAuYyc4nW4eeR66mYgaNuC1DG9yj77aK69AO06sSyFZ2CncH",
+      "cpCode": "574572",
+      "ssl": false
+    }
+
+  }
+}

@@ -1,29 +1,21 @@
-# electron-es6-react
+# NSUploaderElectronES6
 
-A simple boilerplate app to demonstrate how to use [ES6] and [React] with
-[Electron]. It uses [Babel] to automatically transpile ES6 and JSX code,
-without depending on any package manager besides `npm`.
+Electron app built with React and using the NetStorageKit-Node package to ping Akamai netstorage APIs.
 
-## How?
+# How to use
+1. download repository
+2. run "npm install"
+3. Modify /node_modules/netstorageapi/lib/api-request.js.
+                  Add "res.setEncoding('binary');" line 43 (remove double quotes)
+                  Replace line 61 or 62 from "fs.writeFileSync(local_destination, rawData)"" by "fs.writeFileSync(local_destination, rawData, 'binary')" (remove double quotes)
+4. run "npm start"
 
-The Node and Electron binaries both take a parameter `-r` that automatically
-requires a module before the rest of the code.  The `npm start` script is
-modified using this, which registers Babel and loads the entry point `main.js`.
+This will spin up the electron app in dev mode. Access the devtools by pressing F12.
 
-The renderer entry point `index.html` does basically the same, but loads the
-`scripts/main.js` file, which renders the `views/main.jsx` component into the `body`.
-
-## Installation
-
-```bash
-git clone https://github.com/b52/electron-es6-react.git
-cd electron-es6-react
-npm install
-npm start
-```
-
-[ES6]: http://exploringjs.com/
-[React]: https://facebook.github.io/react/
-[Electron]: http://electron.atom.io/
-[Babel]: http://babeljs.io
-
+Packages:
+React
+react-dropzone (dropzone)
+react-skylight (modal overlay)
+NetStorageKit-Node (NS API wrapper)
+electron-config (electron config persistence between app reboots)
+Babel (ES6 support including import keywords)

@@ -1,0 +1,55 @@
+$size: 6px;
+$color: #d9e2ea;
+$bckgd: #282828;
+$count: 250;
+
+.loading-line {
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+}
+.loading-bit {
+  animation: 1s ease infinite animWidth;
+  background-color: white;
+  border-radius: 0;
+  display: inline-block;
+  height: 100%;
+  //margin: 0 $size / 2;
+  opacity: 0;
+  //perpective: 500px;
+  transform: scale(1);
+  vertical-align: top;
+  width: $size;
+}
+/*.loading-bit:nth-child(odd) {
+  background-color: $color;
+}
+.loading-bit:nth-child(even) {
+  -webkit-animation: 2s ease infinite animWidth;
+  background-color: $bckgd;
+}*/
+@for $i from 1 through $count {
+  $time: $i * 0.01s;
+  .loading-bit:nth-child(#{$i}) {
+    animation-delay: $time;
+  }
+}
+
+@keyframes animWidth {
+  0% {
+    // transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    background-color: $color;
+    opacity: 1;
+    // transform: scale(3);
+  }
+  100% {
+
+    opacity: 0;
+  }
+}
