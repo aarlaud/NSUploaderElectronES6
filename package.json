@@ -6,7 +6,9 @@
   "repository": "b52/electron-es6-react",
   "scripts": {
     "compile-scss": "node-sass style/loader.scss style/loader.css",
-    "start": "electron ."
+    "start": "electron .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.3.13",
@@ -21,7 +23,8 @@
     "react-dropzone": "^3.13.2",
     "react-skylight": "^0.4.2",
     "electron": "^1.4.3",
-    "electron-config": "^1.0.0"
+    "electron-config": "^1.0.0",
+    "snyk": "^1.42.5"
   },
   "devDependencies": {
     "devtron": "^1.1.0",
@@ -34,5 +37,6 @@
       "node",
       "browser"
     ]
-  }
+  },
+  "snyk": true
 }
