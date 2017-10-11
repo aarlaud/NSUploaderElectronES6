@@ -1,6 +1,7 @@
 # NSUploaderElectronES6  -Akamai Netstorage Uploader built on Electron with ES6
 <img src="https://snyk.io/test/github/aarlaud/nsuploaderelectrones6/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/aarlaud/nsuploaderelectrones6" style="max-width:100%;"/>
 
+
 Electron app built with React and using the NetStorageKit-Node package to ping Akamai netstorage APIs.
 
 # How to use
