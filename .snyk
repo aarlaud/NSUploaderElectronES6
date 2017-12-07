@@ -1,8 +1,16 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.8.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
     - electron > extract-zip > debug:
         patched: '2017-10-11T04:35:07.364Z'
+    - electron-prebuilt-compile > electron-compilers > detective-less > debug:
+        patched: '2017-12-07T05:44:33.066Z'
+  'npm:ms:20170412':
+    - electron-prebuilt-compile > electron-compilers > detective-less > debug > ms:
+        patched: '2017-12-07T05:44:33.066Z'
+  'npm:uglify-js:20151024':
+    - electron-prebuilt-compile > electron-compilers > jade > transformers > uglify-js:
+        patched: '2017-12-07T05:44:33.066Z'
