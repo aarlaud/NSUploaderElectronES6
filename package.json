@@ -24,7 +24,7 @@
     "react-skylight": "^0.4.2",
     "electron": "^1.4.3",
     "electron-config": "^1.0.0",
-    "snyk": "^1.42.5"
+    "snyk": "^1.54.1"
   },
   "devDependencies": {
     "devtron": "^1.1.0",
