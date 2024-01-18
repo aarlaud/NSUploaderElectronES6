@@ -22,13 +22,13 @@
     "react-dom": "^15.3.2",
     "react-dropzone": "^3.13.2",
     "react-skylight": "^0.4.2",
-    "electron": "^1.4.3",
+    "electron": "^26.6.6",
     "electron-config": "^1.0.0",
     "snyk": "^1.42.5"
   },
   "devDependencies": {
     "devtron": "^1.1.0",
-    "electron": "^1.4.3",
+    "electron": "^26.6.6",
     "electron-prebuilt-compile": "^1.6.11",
     "xo": "^0.18.0"
   },
